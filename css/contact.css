@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: white;
+    height: 50px;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+header nav ul li{
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.container{
+    background-image: url(/img/page_contact.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.contact {
+    background-color: #ffffff95;
+    height: 70vh;
+    max-width: 90%;
+    border: 1px solid red;
+}
