@@ -1,47 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-header {
-    background-color: white;
-    height: 50px;
-}
-header nav {
+.navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; 
+    align-items: center;
+    height: 80px;
+    padding: 0 20px; 
 }
-header nav ul{
+
+.menu {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
 }
-header nav ul li{
-    margin: 20px;
+
+.menu li {
+    list-style: none;
+    margin-right: 20px; 
 }
 
 a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #2B1B12;
 }
 
-.container{
+.btn-action button {
+    height: 40px; 
+    width: 120px;
+    background-color: #923B10;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    border: none; 
+    cursor: pointer; 
+}
+
+.container {
     background-image: url(/img/page_contact.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .contact {
-    background-color: #ffffff95;
-    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.663); 
+    max-height: 100%;
     max-width: 90%;
-    border: 1px solid red;
+    width: 60%;
+    margin: 20px auto; 
+    position: relative;
+    overflow: hidden;
+}
+
+.img_container_contact {
+    background-image: url(/img/1000_F_549310892_75KBCE4jk71o8bmjUQqVqLIrXweuz7gc.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 230px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_container_contact h1 {
+    color: #ffffff;
+    font-size: 2.5rem; 
+    text-align: center; 
+}
+
+.input_contact {
+    text-align: center;
+    padding: 20px; 
+}
+
+.input_contact div {
+    display: flex;
+    justify-content: center;
+    margin: 15px; 
+}
+
+.input_contact div input, button {
+    width: 60%;
+    height: 40px;
+    border-radius: 7px;
+    padding: 0 10px;
+}
+
+textarea {
+    height: 150px;
+    width: 60%;
+    border-radius: 7px;
+    padding: 10px; 
+}
+
+ button {
+    background-color: #923B10;
+    cursor: pointer;
+ }
+ button a{
+    color: #fff;
+
+ }
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+        height: auto;
+    }
+
+    .menu {
+        margin-top: 10px; 
+        flex-wrap: wrap; 
+    }
+
+    .menu li {
+        margin: 10px 15px; 
+    }
+
+    .btn-action {
+        margin-top: 10px; 
+    }
+
+    .contact {
+        max-width: 90%;
+    }
+
+    .img_container_contact h1 {
+        font-size: 2rem;
+    }
+
+    .input_contact div input, textarea, button {
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .img_container_contact {
+        height: 180px;
+    }
+    
+    .img_container_contact h1 {
+        font-size: 1.5rem;
+    }
+    .input_contact {
+        text-align: center;
+        padding: 0px; 
+    }
+
+    .navbar {
+        padding: 0 10px; 
+    }
+
+    .btn-action button {
+        width: 100%;
+    }
 }
