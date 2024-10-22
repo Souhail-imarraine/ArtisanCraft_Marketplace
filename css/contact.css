@@ -117,11 +117,60 @@ textarea {
 
  }
 
+ .parent_footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 400px;
+    background-color: #778B7F;
+    padding: 30px;
+ }
+
+.parent_footer div a{
+    color: #fff;
+    display: grid;
+    grid-template-rows: repeat(5, 10px);
+}
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff80;
+    grid-column: 1/5;
+}
+
+.resp_nav {
+    /* display: none; */
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.resp_nav:hover {
+   background-color: #923B10;
+}
+.resp_nav div{
+   width: 30px;
+   height: 2px;
+   margin-right: 6px 0;
+   background: #923B10 ;
+}
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
     .navbar {
-        flex-direction: column; 
-        height: auto;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        width: 280px;
+        background-color: #778b7fa3;
+        transition: 0.2s;
+        box-shadow: 2px 0 20px rgba(0, 0, 0, 0.5);
     }
 
     .menu {
