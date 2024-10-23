@@ -16,7 +16,7 @@ h1{
 
 p{
     color: #C67851;
-    width: 60%;
+    width: 70%;
     font-family:"Roboto", sans-serif ;
 }
 
@@ -45,20 +45,20 @@ p{
 }
 
 .menu a:hover{
-    color: #923B10;
+    color: #2D0101;
     font-weight: 500;
 }
 
 .btn-action button{
     height: 30px;
-    width: 120px;
-    background-color: #923B10;
+    width: 180px;
+    background-color: #2D0101;
     color: white;
     border-radius: 5px;
     font-family:"Poppins", sans-serif ;
     font-weight: 600;
     border: 1px solid black;
-    box-shadow: 0px 4px 4px black;
+    
     cursor: pointer;
 }
 
@@ -87,21 +87,21 @@ p{
 }
 
 .btn1{
-    background-color: #923B10;
+    background-color: #2D0101;
     color: white;
-    height: 30px;
-    width: 200px;
+    height: 40px;
+    width: 250px;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .btn2{
     background-color: transparent;
-    color: #923B10;
-    border: #923B10 2px solid;
+    color: #2D0101;
+    border: #2D0101 2px solid;
     margin-left: 20px;
-    height: 30px;
-    width: 200px;
+    height: 40px;
+    width: 250px;
     border-radius: 7px;
     cursor: pointer;
 }
@@ -264,7 +264,7 @@ p{
 
 footer{
     height: 60vh;
-    background-color: #778B7F;
+    background-color: #2D0101;
     margin-top: 70px;
 }
 .footer-top{
@@ -272,7 +272,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     height: 70%;
-    font-size: 1.3rem;
+    font-size: 1rem;
     
 }
 
@@ -280,16 +280,16 @@ footer{
     list-style: none;
     color: #923B10;
     font-family:"Poppins", sans-serif ;
-    font-weight: 750;
     margin-bottom: 20px;
+    
 }
 
 .footer-top a,.footer-top p{
     text-decoration: none;
     font-family:"Poppins", sans-serif ;
-    font-weight: 600;
     color: white;
     width: 80%;
+    opacity: 0.7;
 }
 
 .footer-top div{
@@ -320,5 +320,10 @@ footer{
     color: white;
 }
 
+.contacts{
+    margin-bottom: 35px;
+}
 
-
+footer h4{
+    color: white;
+}
