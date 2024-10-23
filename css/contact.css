@@ -157,7 +157,71 @@ textarea {
 }
 
 
+footer{
+    height: 60vh;
+    background-color: #2D0101;
+    margin-top: 70px;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+    font-size: 1rem;
+    
+}
 
+.footer-top li,.logo-light img{
+    list-style: none;
+    color: #923B10;
+    font-family:"Poppins", sans-serif ;
+    margin-bottom: 20px;
+    
+}
+
+.footer-top a,.footer-top p{
+    text-decoration: none;
+    font-family:"Poppins", sans-serif ;
+    color: white;
+    width: 80%;
+    opacity: 0.7;
+}
+
+.footer-top div{
+    width: 20%;
+}
+
+.foot-hr{
+    max-width: 1100px;
+    margin: auto;
+}
+.icons{
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: end;
+}
+.icons img{
+    margin-right: 12px;
+}
+
+.bottom-f p{
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    opacity: 0.7;
+    margin-top: 20px;
+    color: white;
+}
+
+.contacts{
+    margin-bottom: 35px;
+}
+
+footer h4{
+    color: white;
+}
 
 
 
