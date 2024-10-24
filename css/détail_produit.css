@@ -215,6 +215,13 @@ a {
     cursor: pointer;
 }
 
+.prix div h1 {
+    color: #fff;
+    font-size: 2rem;
+    background-color: red;
+    height: 40px;
+    box-shadow: 4px 5px 10px black;
+}
 
 
 footer{
@@ -303,12 +310,7 @@ footer h4{
         width: auto;
         margin: 20px;
     }
-    .prix div h1 {
-        color: #fff;
-        font-size: 3rem;
-        background-color: red;
-        height: 60px;
-    }
+    
 }
 
 
@@ -329,12 +331,14 @@ footer h4{
         width: auto;
         margin: 20px;
     }
+
     .prix div h1 {
         color: #fff;
         font-size: 2rem;
         background-color: red;
         height: 40px;
     }
+
     h2~div {
         height: fit-content;
         position: absolute;
@@ -569,5 +573,9 @@ footer h4{
     }
     section p {
         margin-top: 10px;
+    }
+    .container_select_cart section{
+        width: 100%;
+        margin-left: 25px;
     }
 }
