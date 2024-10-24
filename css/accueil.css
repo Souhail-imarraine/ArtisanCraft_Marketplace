@@ -604,6 +604,7 @@ footer h4{
     }
     .mail input{
         width: 250px;
+        height: 30px;
     }
     .links,.navbar button{
         display: none;
@@ -621,6 +622,13 @@ footer h4{
 
     .bg1{
         display: none;
+    }
+    .btn1{
+        width: 120px;
+        height: 25px !important;
+    }
+    .mail button{
+        height: 30px !important;
     }
 }
 
