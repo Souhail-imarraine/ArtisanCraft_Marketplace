@@ -9,9 +9,9 @@
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
-    font-family:"Roboto", sans-serif ;
+    font-family:"Poppins", sans-serif ;
 }
 
 p{
@@ -72,16 +72,16 @@ hr~p {
 
 
 .container_detail {
-    margin-top: 50px;
+    margin-top: 20px;
     background-color: #FAF2E7;
     width: 70%;
     height: 700px;
     display: flex;
     justify-self: center;
     /* border: 1px solid red; */
-
 }
-.container_detail img{
+
+.container_detail div img{
     height: 95%;
     width: auto;
     margin: 20px;
@@ -147,8 +147,12 @@ select, option {
     border: 2px solid #2D0101;
     color: rgb(0, 0, 0);
     cursor: pointer;
+    padding-left: 10px;
 }
 
+a {
+    text-decoration: none;
+}
 .size {
     margin-top: 10px;
     color: #00000093;
@@ -161,8 +165,13 @@ select, option {
     
 }
 
+#icon_add_to_cart {
+    height: 25px;
+    margin: 0;
+   }
+
 .container_select_cart {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     align-items: flex-end;
 }
@@ -195,7 +204,7 @@ select, option {
 }
 
 .Add_to_cart button{
-   width: 90%;
+   width: 87%;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -246,16 +255,9 @@ footer{
     max-width: 1100px;
     margin: auto;
 }
-.icons{
-    display: flex;
-    max-width: 1100px;
-    margin: auto;
-    margin-top: 20px;
-    justify-content: end;
-}
-.icons img{
-    margin-right: 12px;
-}
+
+
+
 
 .bottom-f p{
     font-weight: 400;
@@ -282,10 +284,21 @@ footer h4{
     font-size: 30px;
     cursor: pointer;
 }
+.icons{
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: end;
+}
+
+.icons img{
+    margin-right: 12px;
+}
 
 
 @media screen and  (max-width: 1359px) {
-    .container_detail img{
+    .container_detail div img{
         height: 60%;
         width: auto;
         margin: 20px;
@@ -311,7 +324,7 @@ footer h4{
         justify-self: center;    
     }
 
-    .container_detail img{
+    .container_detail div img{
         height: 80%;
         width: auto;
         margin: 20px;
@@ -331,7 +344,7 @@ footer h4{
 }
 
 @media screen and (max-width : 900px){
-    .container_detail img {
+    .container_detail div img {
         height: 60%;
         width: auto;
         margin: 20px;
@@ -353,7 +366,7 @@ footer h4{
 }
 
 @media screen and (max-width : 703px){
-    .container_detail img {
+    .container_detail div img {
         height: 60%;
         width: auto;
         margin: 20px;
@@ -372,7 +385,7 @@ footer h4{
         padding-top: 20px;
         padding-right: 70px;
     }
-    .container_detail img {
+    .container_detail div img {
         height: 40%;
         width: auto;
         margin: 20px;
@@ -382,10 +395,14 @@ footer h4{
 
 
 @media screen and (max-width : 657px){
-    .container_detail img {
-        height: 90%;
-        width: 100%;
-        margin: 20px;
+    .container_detail {
+        display: flex;
+        height: 600px;
+        width: 100vw;
+    }
+
+    p,hr {
+        width: 50vw;
     }
 
     .prix h1{
@@ -402,11 +419,38 @@ footer h4{
         padding-top: 20px;
         padding-right: 70px;
     }
-    .container_detail img {
-        height: 40%;
+    .container_detail div img {
+        height: 350px;
         width: auto;
         margin: 20px;
     }
+
+    hr~p {
+        color: #0000009d;
+        width: 100%;
+        font-family:"Roboto", sans-serif ;
+        line-height: 20px;
+    }
+
+    select, option {
+        width: 90%;
+        height: 40px;
+      
+    }
+
+    .Add_to_cart button{
+        width: 80%;
+        height: 40px;
+    }
+    button img {
+        width: 100px;
+    }
+    .Add_to_cart input {
+        height: 40px;
+    }
+   #icon_add_to_cart {
+    height: 25px;
+   }
 }
 
 
@@ -448,4 +492,82 @@ footer h4{
         width: 60%;
     }
 
+}
+
+
+@media(max-width:426px)
+{
+    .logo{
+        width: 40%;
+        margin-left: 20px;
+    }
+    .menu{
+        display: none;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        position: absolute;
+        top:80px;
+        width: 100%;
+        text-align: center;
+    }
+    .hamburger{
+        display: block;
+    }
+    #ham:checked + .hamburger + .logo + .menu{
+        display: block;
+        z-index: 2;
+    }
+
+
+    .links,.navbar button{
+        display: none;
+    }
+    .footer-top div{
+        width: 50%;
+        margin-left: 30px;
+    }
+    .logo-light{
+        margin-top: -40px;
+    }
+    .foot-hr, .icons{
+        max-width: 200px;
+    }
+    
+
+    .container_detail{
+        align-items: center;
+        height: 140vh;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+    }
+
+    h2~div{
+        top: 0;
+       
+    }
+    .prix{
+        justify-content: center;
+    }
+    .content_product {
+        margin: 0 20px;
+    }
+    .container_select_cart {
+        margin: 0 20px;
+
+    }
+    .container_detail div img {
+        height: 450px;
+    }
+    h1~h2 {
+        padding-right: 30px;
+    }
+
+    select {
+        margin: 0;
+    }
+    section p {
+        margin-top: 10px;
+    }
 }
