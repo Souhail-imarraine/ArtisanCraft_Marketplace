@@ -66,8 +66,10 @@ hr~p {
     font-family:"Poppins", sans-serif ;
     font-weight: 600;
     border: 1px solid black;
+    
     cursor: pointer;
 }
+
 
 .container_detail {
     margin-top: 50px;
@@ -153,16 +155,21 @@ select, option {
     
 }
 
+.count {
+    padding-left: 40%;
+    font-size: large;
+    
+}
+
 .container_select_cart {
     width: 100%;
     display: flex;
     align-items: flex-end;
 }
+
 .container_select_cart section{
     width: 100%;
 }
-
-
 
 .Add_to_cart {
     display: flex;
@@ -198,6 +205,84 @@ select, option {
     border-radius: 7px;
     cursor: pointer;
 }
+
+
+
+footer{
+    height: 60vh;
+    background-color: #2D0101;
+    margin-top: 70px;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+    font-size: 1rem;
+    
+}
+
+.footer-top li,.logo-light img{
+    list-style: none;
+    color: #923B10;
+    font-family:"Poppins", sans-serif ;
+    margin-bottom: 20px;
+    
+}
+
+.footer-top a,.footer-top p{
+    text-decoration: none;
+    font-family:"Poppins", sans-serif ;
+    color: white;
+    width: 80%;
+    opacity: 0.7;
+}
+
+.footer-top div{
+    width: 20%;
+}
+
+.foot-hr{
+    max-width: 1100px;
+    margin: auto;
+}
+.icons{
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: end;
+}
+.icons img{
+    margin-right: 12px;
+}
+
+.bottom-f p{
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    opacity: 0.7;
+    margin-top: 20px;
+    color: white;
+}
+
+.contacts{
+    margin-bottom: 35px;
+}
+
+footer h4{
+    color: white;
+}
+
+.hidden{
+    display: none;
+}
+.hamburger{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 
 @media screen and  (max-width: 1359px) {
     .container_detail img{
@@ -245,6 +330,122 @@ select, option {
     }
 }
 
-@media screen and (max-width : 881px){
+@media screen and (max-width : 900px){
+    .container_detail img {
+        height: 60%;
+        width: auto;
+        margin: 20px;
+    }
+    .prix h1{
+        color: red;
+        margin: 20px;
+        font-weight: bolder;
+        font-size: 30px;
+        padding-left: 0;
+    }
+    h1~h2 {
+        font-size: 1rem;
+        text-decoration: line-through;
+        color: rgba(0, 0, 0, 0.468);
+        padding-top: 20px;
+        padding-right: 70px;
+    }
+}
+
+@media screen and (max-width : 703px){
+    .container_detail img {
+        height: 60%;
+        width: auto;
+        margin: 20px;
+    }
+    .prix h1{
+        color: red;
+        margin: 20px;
+        font-weight: bolder;
+        font-size: 30px;
+        padding-left: 0;
+    }
+    h1~h2 {
+        font-size: 1rem;
+        text-decoration: line-through;
+        color: rgba(0, 0, 0, 0.468);
+        padding-top: 20px;
+        padding-right: 70px;
+    }
+    .container_detail img {
+        height: 40%;
+        width: auto;
+        margin: 20px;
+    }
     
+}
+
+
+@media screen and (max-width : 657px){
+    .container_detail img {
+        height: 90%;
+        width: 100%;
+        margin: 20px;
+    }
+
+    .prix h1{
+        color: red;
+        margin: 20px;
+        font-weight: bolder;
+        font-size: 30px;
+        padding-left: 0;
+    }
+    h1~h2 {
+        font-size: 1rem;
+        text-decoration: line-through;
+        color: rgba(0, 0, 0, 0.468);
+        padding-top: 20px;
+        padding-right: 70px;
+    }
+    .container_detail img {
+        height: 40%;
+        width: auto;
+        margin: 20px;
+    }
+}
+
+
+
+
+
+
+/*********************************footer && header // responsivity***********************************/
+
+/*footer*/ 
+@media(max-width:1024px)
+{
+    .foot-hr,.icons{
+        max-width: 800px;
+    }
+    .logo-light img{
+        width: 70%;
+    }
+}
+
+@media(max-width:768px)
+{
+    .navbar{
+        max-width: 700px;
+        margin: auto;
+    }
+    .navbar img{
+        width: 70%;
+    }
+    .navbar button{
+        width: 100px;
+    }
+
+
+    .foot-hr,.icons{
+        max-width: 600px;
+    }
+    .logo-light img{
+        width: 60%;
+    }
+
 }
