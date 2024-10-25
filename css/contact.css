@@ -41,12 +41,11 @@ header {
 
 #couleur_contact {
     color: #D04500;
-    font-weight: bold;
 }
 
 .menu a:hover{
-    color: #2D0101;
-    font-weight: 500;
+    color: #D04500;
+    font-weight: bold;
 }
 
 .btn-action button{
