@@ -404,4 +404,40 @@ footer h4 {
     width: 100px;
     border-radius: 20px;
     text-align: center;
+    cursor: pointer;
+}
+#text {
+    color: #D04500;
+}
+.switch-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.switch-section button {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid gray;
+    background-color: white;
+    font-size: 23px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+.switch-section button:hover {
+    background-color: gray;
+    color: white;
+}
+.switch-section ul a {
+    font-family: poppins;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+}
+#page1 {
+    font-weight: 800;
+    color: #923B10;
 }
