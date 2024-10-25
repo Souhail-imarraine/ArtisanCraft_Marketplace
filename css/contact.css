@@ -10,6 +10,12 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 .navbar{
     display: flex;
     justify-content: space-around;
@@ -60,7 +66,7 @@ body {
 }
 
 .container {
-    background-image: url(../images/page_contact.png);
+    background-image: url(../images/75290.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -74,22 +80,25 @@ a {
 }
 
 .contact {
-    background-color: rgba(255, 255, 255, 0.663); 
+    background-color: rgba(255, 255, 255, 0.205); 
     max-height: 100%;
     max-width: 90%;
     width: 60%;
     margin: 20px auto; 
     position: relative;
     overflow: hidden;
+    padding-top: 40px;
+
 }
 
 .img_container_contact {
     background-image: url(../images/1000_F_549310892_75KBCE4jk71o8bmjUQqVqLIrXweuz7gc.jpg);
+    opacity: 0.7;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 230px;
-    border: 1px solid white;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,7 +133,8 @@ textarea {
     height: 150px;
     width: 60%;
     border-radius: 7px;
-    padding: 10px; 
+    padding: 10px;
+    resize: none; 
 }
 
  button {
