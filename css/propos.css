@@ -50,7 +50,6 @@ body {
 footer{
     height: 60vh;
     background-color: #2D0101;
-    margin-top: 70px;
 }
 .footer-top{
     display: flex;
@@ -179,7 +178,7 @@ footer h4{
         background-color: #fff;
         border: 1px solid #ccc;
         position: absolute;
-        top:80px;
+        top:60px;
         width: 100%;
         text-align: center;
     }
@@ -205,13 +204,22 @@ footer h4{
     .foot-hr,.icons{
         max-width: 200px;
     }
-
+    .feedback {
+        background-color:#f8ead7;; /*#2D0101;*/
+        color: #4B2E2E;;
+        padding: 50px;
+        text-align: center;
+    }
+    .client {
+        display: inline-block ;
+        justify-content: center;
+    }
 }
 
 
 
 entete {
-    background-image: url(/images/shutterstock_231575308.png);
+    background-image: url(../images/shutterstock_231575308.png);
     background-size: cover;
     background-position: center;
     height: 70vh;
@@ -242,7 +250,7 @@ entete h1{
 
 
 .mission {
-    background-color: #D04500;
+    background-color: #2D0101;
     padding: 50px;
     text-align: center;
     color: #FDF3E7;
@@ -276,7 +284,7 @@ entete h1{
 
 .valeurs-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .valeurs-item h3 {
@@ -389,8 +397,8 @@ entete h1{
 }
 
 .cta-button {
-    background-color: #D04500; 
-    color: #4B2E2E; 
+    background-color: #4B2E2E; 
+    color: #fff;
     padding: 15px 30px;
     border: none;
     border-radius: 5px;
@@ -399,20 +407,21 @@ entete h1{
 }
 
 .cta-button:hover {
-    background-color: #4B2E2E; 
-    color: #fff;
+    background-color: #D04500; 
+    color: #4B2E2E; 
+    
 }
     .valeurs-item:hover .img1 {
-        content: url('images/icons8-cards.gif'); 
+        content: url('../images/icons8-cards.gif'); 
     }
     .valeurs-item:hover .img2 {
-        content: url('images/icons8-quality.gif'); 
+        content: url('../images/icons8-quality.gif'); 
     }
     .valeurs-item:hover .img3 {
-        content: url('images/icons8-people.gif'); 
+        content: url('../images/icons8-people.gif'); 
     }
     .valeurs-item:hover .img4 {
-        content: url('images/icons8-service.gif'); 
+        content: url('../images/icons8-service.gif'); 
     }
     
     .pers img{
