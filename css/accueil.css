@@ -155,7 +155,7 @@ p{
     width: 100%;
     top: 0;
     opacity: 0;
-    transition: all 0.15s cubic-bezier(0,0,0,0);
+    transition: all 0.15s ease-in;
     border-radius: 8px;
 }
 
@@ -203,6 +203,7 @@ p{
 
 .card h4,.card img{
     margin-bottom: 15px;
+    border-radius: 50px;
 }
 .card p{
     width: 100%;
@@ -376,6 +377,54 @@ footer h4{
     cursor: pointer;
 }
 
+
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        transform: translateX(-100px)
+    }to{
+        opacity: 1;
+        transform: translateX(0px) 
+    }
+}
+
+@keyframes appearup {
+    from{
+        opacity: 0;
+        transform: translateY(-100px)
+    }to{
+        opacity: 1;
+        transform: translateY(0px) 
+    }
+}
+
+@keyframes appearright {
+    from{
+        opacity: 0;
+        transform: translateX(100px)
+    }to{
+        opacity: 1;
+        transform: translateX(0px) 
+    }
+}
+
+.sec2,.desc{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.sec3,.bg5{
+    animation: appearright linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.sec4,.sec6{
+    animation: appearup linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
 /********************************************************************responsivity****************************************************************************************/
 
 @media(max-width:1024px)
@@ -505,6 +554,10 @@ footer h4{
     }
     .content{
         padding-top: 50px;
+        max-width: 100%;
+        background-image: url(/ArtisanCraft_Marketplace/images/bg1.png);
+        background-blend-mode: overlay;
+        
     }
     .sec2 img{
         width: 100%;
@@ -553,6 +606,7 @@ footer h4{
     }
     .mail input{
         width: 250px;
+        height: 30px;
     }
     .links,.navbar button{
         display: none;
@@ -566,6 +620,17 @@ footer h4{
     }
     .foot-hr,.icons{
         max-width: 200px;
+    }
+
+    .bg1{
+        display: none;
+    }
+    .btn1{
+        width: 120px;
+        height: 25px !important;
+    }
+    .mail button{
+        height: 30px !important;
     }
 }
 
