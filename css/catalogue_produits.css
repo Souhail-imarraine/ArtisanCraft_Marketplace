@@ -35,16 +35,17 @@ header {
     font-family: "Poppins", sans-serif;
 }
 
-.btn-action button {
+.btn-action button{
     height: 30px;
-    width: 120px;
-    background-color: #923B10;
+    width: 180px;
+    background-color: #2D0101;
     color: white;
     border-radius: 5px;
-    font-family: "Poppins", sans-serif;
+    font-family:"Poppins", sans-serif ;
     font-weight: 600;
     border: 1px solid black;
-    box-shadow: 0px 4px 4px black;
+    
+    cursor: pointer;
 }
 
 .page-title {
@@ -55,7 +56,7 @@ header {
 }
 
 .page-title h1 {
-    font-family: roboto;
+    font-family: poppins;
 }
 
 .product-section {
@@ -313,6 +314,19 @@ footer h4 {
         display: grid;
         grid-template-columns: 1fr;
     }
+
+    .fixed {
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .search-section {
+        flex-direction: column;
+    }
+
+    .sort-buttons {
+        line-height: 50px;
+    }
 }
 
 .menu a:hover {
@@ -340,7 +354,8 @@ footer h4 {
 }
 
 .search img {
-    width: 30px;
+    width: 25px;
+    height: 32px;
 }
 
 .ss {
@@ -352,7 +367,7 @@ footer h4 {
 
 .search-section {
     padding: 18px;
-    justify-content: center;
+    justify-content: space-between;
     display: flex;
     width: 90vw;
     height: fit-content;
@@ -367,3 +382,26 @@ footer h4 {
     padding: 5px;
 }
 
+.fixed {
+    display: flex;
+}
+
+.filter-button {
+    font-family: poppins;
+    border: none;
+    background-color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.price-choice {
+    margin-left: 15px;
+    height: 40px;
+    border: none;
+    width: 100px;
+    border-radius: 20px;
+    text-align: center;
+}
