@@ -60,7 +60,7 @@ body {
 }
 
 .container {
-    background-image: url(/images/page_contact.png);
+    background-image: url(../images/page_contact.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -84,7 +84,7 @@ a {
 }
 
 .img_container_contact {
-    background-image: url(/images/1000_F_549310892_75KBCE4jk71o8bmjUQqVqLIrXweuz7gc.jpg);
+    background-image: url(../images/1000_F_549310892_75KBCE4jk71o8bmjUQqVqLIrXweuz7gc.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
