@@ -28,6 +28,9 @@ body {
     color: #2B1B12;
     font-family:"Poppins", sans-serif ;
 }
+.menu li a:hover{
+    font-weight:bold;
+}
 
 .menu a:hover{
     color: #2D0101;
