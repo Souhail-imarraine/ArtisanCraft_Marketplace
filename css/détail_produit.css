@@ -92,13 +92,14 @@ hr~p {
 }
 
 h1~h2 {
-    margin: 10px;
+    margin: 5px;
     font-weight: 900;
     font-size: 1.5rem;
     text-decoration: line-through;
     color: rgba(0, 0, 0, 0.468);
     padding-top: 25px;
     padding-right: 70px;
+    font-size: 20px;
 }
 
 .prix{
