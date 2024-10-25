@@ -33,13 +33,23 @@
     </div>
 
     <div class="ss">
-    <div class="search-section">
-        <label class="search" for="search">
-            <img src="images/search-icon.svg" alt="">
-        </label>
-        <input class="search-bar" type="text" id="search" placeholder="Type To search">
+        <div class="search-section">
+            <div class="fixed">
+                <label class="search" for="search">
+                    <img src="images/search-icon.svg" alt="">
+                </label>
+                <input class="search-bar" type="text" id="search" placeholder="Type To search">
+            </div>
+            <div class="sort-buttons">
+                <select class="price-choice" id="price-selector">
+                    <option class="option1" value="High"> High to Low</option>
+                    <option value="Low">Low to High</option>
+                </select>
+                <button class="filter-button">Availability</button>
+                <button class="filter-button">rating</button>
+            </div>
+        </div>
     </div>
-</div>
 
     <div class="product-section">
         <div class="internal-section">
