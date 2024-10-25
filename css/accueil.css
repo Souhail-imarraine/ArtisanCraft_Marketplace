@@ -589,9 +589,18 @@ footer h4{
         margin-bottom: 20px;
     }
     .desc{
-        width: 85%;
-        
+        width: 80%;
     }
+    .desc h4,.desc h1,.desc p,.desc button{
+       text-align: center;
+    }
+    .desc p{
+        margin-left: 50px;
+    }
+    .desc .btn1{
+        margin-left: 110px;
+    }
+
     .sec6{
         padding-top: 1px;
     }
