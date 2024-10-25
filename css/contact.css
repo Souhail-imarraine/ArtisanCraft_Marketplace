@@ -39,13 +39,18 @@ header {
     font-family:"Poppins", sans-serif ;
 }
 
+#couleur_contact {
+    color: #D04500;
+    font-weight: bold;
+}
+
 .menu a:hover{
     color: #2D0101;
     font-weight: 500;
 }
 
 .btn-action button{
-    height: 30px;
+    height: 35px;
     width: 180px;
     background-color: #2D0101;
     color: white;
@@ -55,6 +60,19 @@ header {
     border: 1px solid black;
     cursor: pointer;
 }
+
+.btn-action button:hover {
+    height: 35px;
+    width: 180px;
+    background-color: white;
+    color: #2D0101;
+    border-radius: 5px;
+    font-weight: 600;
+    border: 1px solid #2D0101;
+    cursor: pointer;
+}
+
+
 
 .hidden{
     display: none;
@@ -80,7 +98,7 @@ a {
 }
 
 .contact {
-    background-color: rgba(255, 255, 255, 0.205); 
+    background-color: rgb(255 255 255 / 0%);
     max-height: 100%;
     max-width: 90%;
     width: 60%;
@@ -122,10 +140,14 @@ a {
     margin: 15px; 
 }
 
-.input_contact div input, button {
+.input_contact div input, button  {
     width: 60%;
     height: 40px;
     border-radius: 7px;
+    padding: 0 10px;
+}
+
+.input_contact div input::placeholder {
     padding: 0 10px;
 }
 
@@ -135,6 +157,9 @@ textarea {
     border-radius: 7px;
     padding: 10px;
     resize: none; 
+}
+textarea::placeholder {
+    padding: 0 10px;
 }
 
  button {
