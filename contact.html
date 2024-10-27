@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav class="navbar">
-            <input type="checkbox" id="ham" class="hidden">
+            <input type="checkbox" id="ham" class="hidden" >
             <label for="ham" class="hamburger">&#9776;</label>
             <div class="logo">
                 <a href="index.html"><img src="images/Frame 7.svg" alt="Logo"></a>
@@ -34,13 +34,13 @@
                 </div>
                 <div class="input_contact">
                     <div>
-                        <input type="text" placeholder="name">
+                        <input type="text" placeholder="name" required>
                     </div>
                     <div>
-                        <input type="text" placeholder="email address">
+                        <input type="email" placeholder="email address" required pattern=".+@.+..+"> 
                     </div>
                     <div>
-                        <textarea placeholder="message"></textarea>
+                        <textarea placeholder="message" required></textarea>
                     </div>
                     <div>
                         <button><a href="#">Submit</a></button>
